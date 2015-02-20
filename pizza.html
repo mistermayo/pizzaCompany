@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza Company</title>
+</head>
+<body>
+  <div class="container">
+    <h3>Order a Pizza!</h3>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>size:</h4>
+        <ul id="size">
+
+        </ul>
+
+        <h6>How many inches do you want your pizza?:</h6>
+          <form id="new-list">
+            <div class="form-group">
+              <label for="pizza-size">size me</label>
+              <input type="text" class="form-control" id="pizza-size">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+        </div>
+
+      <div class="col-sm-6">
+        <div id="show-sizes">
+          <h4></h4>
+
+          <div id="show-tasks">
+            <div class="new-task">
+              <ul id="tasks">
+
+              </ul>
+            </div>
+          </div>
+
+          <h5>Cheese or Pepperoni?:</h5>
+
+          <form id="add-topping">
+
+            <div class="form-group">
+              <label for="add-topping">Top Your Pizza</label>
+              <input type="text" class="form-control" id="add-topping">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+            <div id="result">
+              <p>Your pizza is: <span id="change-result"></span>.</p>
+            </div>
+
+            <div id="error">
+              <p>Please enter a length or topping!</p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
